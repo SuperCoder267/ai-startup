@@ -1,4 +1,8 @@
+"use client"
+import { useState } from 'react'
+
 export default function Header() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <div className='min-h-screen bg-white text-gray-900 font-sans antialiased'>
             <header className='fixed w-full bg-white shadow-sm z-50 transition-all duration-300'>
@@ -70,19 +74,19 @@ export default function Header() {
                                     <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         The Problem
                                     </a>
-                                    <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
+                                    <a href='#solution' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         Our Solution
                                     </a>
-                                    <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
+                                    <a href='#features' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         Features
                                     </a>
-                                    <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
+                                    <a href='#usecases' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         Use Cases
                                     </a>
-                                    <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
+                                    <a href='#testimonials' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         Testimonials
                                     </a>
-                                    <a href='#problem' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
+                                    <a href='#pricing' className='-m-3 p-3 flex items-center text-base font-medium rounded-md text-gray-900 hover:bg-gray-50 transition-colors duration-300'>
                                         Pricing
                                     </a>
                                 </nav>
