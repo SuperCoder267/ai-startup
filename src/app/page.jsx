@@ -8,6 +8,7 @@ import Solution from './components/Solution.jsx'
 import Features from './components/Features.jsx'
 import UseCases from './components/UseCases.jsx'
 import Testimonials from './components/Testimonials.jsx'
+import Pricing from './components/Pricing.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -216,6 +217,12 @@ export default function App() {
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
                 testimonialsRef={testimonialsRef}
+            />
+            <Pricing 
+                pricingPlans={pricingPlans} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+                pricingRef={pricingRef}
             />
         </div>
     )
