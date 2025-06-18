@@ -5,6 +5,7 @@ import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Problem from './components/Problem.jsx'
 import Solution from './components/Solution.jsx'
+import Features from './components/Features.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -195,6 +196,12 @@ export default function App() {
                 solutionRef={solutionRef} 
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
+            />
+            <Features
+                featureModules={featureModules} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+                featuresRef={featuresRef}
             />
         </div>
     )
