@@ -4,7 +4,6 @@ import { useState } from 'react'
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <div className='min-h-screen bg-white text-gray-900 font-sans antialiased'>
             <header className='fixed w-full bg-white shadow-sm z-50 transition-all duration-300'>
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div className='flex justify-between items-center py-4 md:justify-start md:space-x-10'>
@@ -105,6 +104,5 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-        </div>
     )
 }

@@ -1,6 +1,8 @@
 'use client'
 import {useState, useEffect, useRef} from 'react'
+
 import Header from './components/Header.jsx'
+import Hero from './components/Hero.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -175,6 +177,13 @@ export default function App() {
 
     // Components
     return (
-        <Header />
+        <div className='min-h-screen bg-white text-gray-900 font-sans antialiased'>
+            <Header />
+            <Hero 
+                heroRef={heroRef} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+                />
+        </div>
     )
 }
