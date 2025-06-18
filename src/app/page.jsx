@@ -6,6 +6,7 @@ import Hero from './components/Hero.jsx'
 import Problem from './components/Problem.jsx'
 import Solution from './components/Solution.jsx'
 import Features from './components/Features.jsx'
+import UseCases from './components/UseCases.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -202,6 +203,12 @@ export default function App() {
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
                 featuresRef={featuresRef}
+            />
+            <UseCases 
+                useCases={useCases} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+                useCasesRef={useCasesRef}  
             />
         </div>
     )
