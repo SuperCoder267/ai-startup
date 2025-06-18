@@ -3,6 +3,7 @@ import {useState, useEffect, useRef} from 'react'
 
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
+import Problem from './components/Problem.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -183,7 +184,12 @@ export default function App() {
                 heroRef={heroRef} 
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
-                />
+            />
+            <Problem
+                problemRef={problemRef} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+            />
         </div>
     )
 }
