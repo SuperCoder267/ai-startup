@@ -4,6 +4,7 @@ import {useState, useEffect, useRef} from 'react'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Problem from './components/Problem.jsx'
+import Solution from './components/Solution.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -187,6 +188,11 @@ export default function App() {
             />
             <Problem
                 problemRef={problemRef} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+            />
+            <Solution 
+                solutionRef={solutionRef} 
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
             />
