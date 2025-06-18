@@ -7,6 +7,7 @@ import Problem from './components/Problem.jsx'
 import Solution from './components/Solution.jsx'
 import Features from './components/Features.jsx'
 import UseCases from './components/UseCases.jsx'
+import Testimonials from './components/Testimonials.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -209,6 +210,12 @@ export default function App() {
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
                 useCasesRef={useCasesRef}  
+            />
+            <Testimonials
+                testimonials={testimonials} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
+                testimonialsRef={testimonialsRef}
             />
         </div>
     )
