@@ -9,6 +9,7 @@ import Features from './components/Features.jsx'
 import UseCases from './components/UseCases.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Pricing from './components/Pricing.jsx'
+import CTA from './components/CTA.jsx'
 
 export default function App() {
     // State for mobile menu
@@ -223,6 +224,11 @@ export default function App() {
                 inViewSections={inViewSection} 
                 setInViewSections={setInViewSections}
                 pricingRef={pricingRef}
+            />
+            <CTA 
+                ctaRef={ctaRef} 
+                inViewSections={inViewSection} 
+                setInViewSections={setInViewSections}
             />
         </div>
     )
